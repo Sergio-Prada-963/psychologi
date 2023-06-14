@@ -18,10 +18,12 @@
 <!-- Site wrapper -->
 <div class="wrapper">
   <!-- Navbar -->
-  <?php include"vistas/modules/navbar.php"; ?>
+  <?php include"modules/navbar.php" ?>
 
   <!-- Main Sidebar Container -->
-  <?php include"vistas/modules/sidebar.php"; ?>
+  <?php include"modules/sidebar.php" ?>
+
+  <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
@@ -81,9 +83,9 @@
 
   <footer class="main-footer">
     <div class="float-right d-none d-sm-block">
-      <b>Version</b> 3.2.0
+      <b>Version</b> 1.2
     </div>
-    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+    <strong>Copyright &copy; 2023 Sergio Prada.</strong> All rights reserved.
   </footer>
 
   <!-- Control Sidebar -->
