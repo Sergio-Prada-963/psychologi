@@ -21,11 +21,21 @@
 
       <!-- Sidebar Menu -->
       <nav class="mt-2">
-        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+        <ul class="nav nav-pills nav-sidebar flex-column orange" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
+
             <li class="nav-item">
-                <a href="../gallery.html" class="nav-link">
+              <a href="/ArTeM02-062/php/psychologi/pysichologi/Home" class="nav-link <?php if($routerArray[5]=='Home') : ?> active <?php endif ?>">
+                  <i class="nav-icon far fa-user"></i>
+                  <p>
+                      Home
+                  </p>
+              </a>
+            </li>
+            
+            <li class="nav-item">
+                <a href="/ArTeM02-062/php/psychologi/pysichologi/users" class="nav-link <?php if($routerArray[5]=='users') : ?> active <?php endif ?>">
                     <i class="nav-icon far fa-user"></i>
                     <p>
                         Users
@@ -34,7 +44,7 @@
             </li>
           
            <li class="nav-item">
-               <a href="/clinicHistori" class="nav-link">
+               <a href="/ArTeM02-062/php/psychologi/pysichologi/Clinic Histori" class="nav-link <?php if($routerArray[5]=='Clinic%20Histori') : ?> active <?php endif ?>">
                    <i class="nav-icon far fa-user"></i>
                    <p>
                        Clinic Histori
@@ -43,7 +53,7 @@
            </li>
 
            <li class="nav-item">
-               <a href="/interviews" class="nav-link">
+               <a href="/ArTeM02-062/php/psychologi/pysichologi/Interviews" class="nav-link <?php if($routerArray[5]=='Interviews') : ?> active <?php endif ?>">
                    <i class="nav-icon far fa-user"></i>
                    <p>
                        Interviews
@@ -52,7 +62,7 @@
            </li>
 
            <li class="nav-item">
-               <a href="/psychologits" class="nav-link">
+               <a href="/ArTeM02-062/php/psychologi/pysichologi/Psychologits" class="nav-link <?php if($routerArray[5]=='Psychologits') : ?> active <?php endif ?>">
                    <i class="nav-icon far fa-user"></i>
                    <p>
                        Psychologits
@@ -61,7 +71,7 @@
            </li>
 
            <li class="nav-item">
-               <a href="/treatment" class="nav-link">
+               <a href="/ArTeM02-062/php/psychologi/pysichologi/Treatment" class="nav-link <?php if($routerArray[5]=='Treatment') : ?> active <?php endif ?>">
                    <i class="nav-icon far fa-user"></i>
                    <p>
                        Treatment
