@@ -34,3 +34,23 @@
     </form>
 </div>
 
+<?php 
+if(isset($_POST['guardar'])){
+$datos = array();
+$datos["nombre"] = $_POST['nombre'];
+$datos["especialidad"] = $_POST['especialidad'];
+$datos["edad"] = $_POST['edad'];
+
+$curl = curl_init();
+    curl_setopt($curl, CURLOPT_URL, $url);
+    curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($curl, CURLOPT_POST, true);
+    curl_setopt($curl, CURLOPT_POSTFIELDS, json_encode($datos));
+    $response = curl_exec($curl);
+    curl_close($curl);
+    var_dump($response);
+
+
+}
+?>
+
