@@ -21,7 +21,15 @@
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <li class="nav-item"> 
-            <a href="vistas/pages/clientes/clientes.php" class="nav-link">
+            <a href="/SkylAb-145/Proyects/psychologi/cotizacionlte/home" class="nav-link <?php if($urlArray[5]=='home') : ?>active<?php endif; ?>">
+              <i class="nav-icon fas fa-edit"></i>
+              <p>
+                Home
+              </p>
+            </a>
+          </li>
+          <li class="nav-item"> 
+            <a href="/SkylAb-145/Proyects/psychologi/cotizacionlte/clientes" class="nav-link <?php if($urlArray[5]=='clientes') : ?>active<?php endif; ?>">
               <i class="nav-icon fas fa-edit"></i>
               <p>
                 Clientes
@@ -29,7 +37,7 @@
             </a>
           </li>
           <li class="nav-item"> 
-            <a href="#" class="nav-link">
+            <a href="/SkylAb-145/Proyects/psychologi/cotizacionlte/empleados" class="nav-link <?php if($urlArray[5]=='empleados') : ?>active<?php endif; ?>">
               <i class="nav-icon fas fa-edit"></i>
               <p>
                 Empleados
@@ -37,7 +45,7 @@
             </a>
           </li>
           <li class="nav-item"> 
-            <a href="#" class="nav-link">
+            <a href="/SkylAb-145/Proyects/psychologi/cotizacionlte/productos" class="nav-link <?php if($urlArray[5]=='productos') : ?>active<?php endif; ?>">
               <i class="nav-icon fas fa-edit"></i>
               <p>
                 Productos
@@ -45,7 +53,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="/SkylAb-145/Proyects/psychologi/cotizacionlte/cotizaciones" class="nav-link <?php if($urlArray[5]=='cotizaciones') : ?>active<?php endif; ?>">
               <i class="nav-icon fas fa-table"></i>
               <p>
                 Cotizaciones
