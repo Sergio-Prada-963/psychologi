@@ -1,6 +1,6 @@
-<aside class="main-sidebar sidebar-dark-primary elevation-4">
+<aside class="main-sidebar sidebar-dark-orange elevation-4">
     <!-- Brand Logo -->
-    <a class="brand-link">
+    <a class="brand-link brand-link navbar-orange">
       <img src="https://cdn-icons-png.flaticon.com/512/4445/4445668.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
       <span class="brand-text font-weight-light">Alquilartemis</span>
     </a>
@@ -21,7 +21,7 @@
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <li class="nav-item"> 
-            <a href="#" class="nav-link">
+            <a href="vistas/pages/clientes/clientes.php" class="nav-link">
               <i class="nav-icon fas fa-edit"></i>
               <p>
                 Clientes
@@ -58,4 +58,4 @@
       <!-- /.sidebar-menu -->
     </div>
     <!-- /.sidebar -->
-  </aside>
+</aside>
