@@ -26,7 +26,7 @@
                with font-awesome or any other icon font library -->
 
             <li class="nav-item">
-              <a href="/ArTeM02-062/php/psychologi/pysichologi/Home" class="nav-link <?php if($routerArray[5]=='Home') : ?> active <?php endif ?>">
+              <a href="/ArTeM02-062/php/psychologi/pysichologi/home" class="nav-link <?php if($routerArray[5]=='home') : ?> active <?php endif ?>">
                   <i class="nav-icon far fa-user"></i>
                   <p>
                       Home
@@ -44,7 +44,7 @@
             </li>
           
            <li class="nav-item">
-               <a href="/ArTeM02-062/php/psychologi/pysichologi/Clinic Histori" class="nav-link <?php if($routerArray[5]=='Clinic%20Histori') : ?> active <?php endif ?>">
+               <a href="/ArTeM02-062/php/psychologi/pysichologi/clinicHistori" class="nav-link <?php if($routerArray[5]=='clinicHistori') : ?> active <?php endif ?>">
                    <i class="nav-icon far fa-user"></i>
                    <p>
                        Clinic Histori
@@ -53,7 +53,7 @@
            </li>
 
            <li class="nav-item">
-               <a href="/ArTeM02-062/php/psychologi/pysichologi/Interviews" class="nav-link <?php if($routerArray[5]=='Interviews') : ?> active <?php endif ?>">
+               <a href="/ArTeM02-062/php/psychologi/pysichologi/interviews" class="nav-link <?php if($routerArray[5]=='interviews') : ?> active <?php endif ?>">
                    <i class="nav-icon far fa-user"></i>
                    <p>
                        Interviews
@@ -62,7 +62,7 @@
            </li>
 
            <li class="nav-item">
-               <a href="/ArTeM02-062/php/psychologi/pysichologi/Psychologits" class="nav-link <?php if($routerArray[5]=='Psychologits') : ?> active <?php endif ?>">
+               <a href="/ArTeM02-062/php/psychologi/pysichologi/psychologits" class="nav-link <?php if($routerArray[5]=='psychologits') : ?> active <?php endif ?>">
                    <i class="nav-icon far fa-user"></i>
                    <p>
                        Psychologits
@@ -71,7 +71,7 @@
            </li>
 
            <li class="nav-item">
-               <a href="/ArTeM02-062/php/psychologi/pysichologi/Treatment" class="nav-link <?php if($routerArray[5]=='Treatment') : ?> active <?php endif ?>">
+               <a href="/ArTeM02-062/php/psychologi/pysichologi/treatment" class="nav-link <?php if($routerArray[5]=='treatment') : ?> active <?php endif ?>">
                    <i class="nav-icon far fa-user"></i>
                    <p>
                        Treatment
