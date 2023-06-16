@@ -33,8 +33,7 @@ $routerArray = array_filter($routerArray);
   <script src="vistas/assets/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
   <!-- AdminLTE App -->
   <script src="vistas/assets/plugins/adminlte/js/adminlte.min.js"></script>
-  <!-- AdminLTE for demo purposes -->
-  <script src="vistas/assets/plugins/adminlte/js/demo.js"></script>
+
   
   <!-- DataTables  & Plugins -->
   <script src="vistas/assets/plugins/datatables/jquery.dataTables.min.js"></script>
@@ -64,6 +63,7 @@ $routerArray = array_filter($routerArray);
   <?php include"vistas/modules/sidebar.php"; ?>
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
+    
     <?php 
     if(!empty($routerArray[5])){
       if($routerArray[5] == "users" ||

@@ -1,4 +1,4 @@
-<aside class="main-sidebar sidebar-ligth-orange elevation-4">
+<aside class="main-sidebar sidebar-ligth-orange elevation-5">
     <!-- Brand Logo -->
     <a href="../../index3.html" class="brand-link navbar-orange ">
       <img src="vistas/assets/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
@@ -26,7 +26,7 @@
                with font-awesome or any other icon font library -->
 
             <li class="nav-item">
-              <a href="xampp/var/www/html/php/psychologi/pysichologi/home" class="nav-link <?php if($routerArray[5]=='home') : ?> active <?php endif ?>">
+              <a href="/SkylAb-145/Proyects/psychologi/pysichologi" class="nav-link <?php if($routerArray[5]=='') : ?> active <?php endif ?>">
                   <i class="nav-icon far fa-user"></i>
                   <p>
                       Home
@@ -35,7 +35,7 @@
             </li>
             
             <li class="nav-item">
-                <a href="xampp/var/www/html/php/psychologi/pysichologi/users" class="nav-link <?php if($routerArray[5]=='users') : ?> active <?php endif ?>">
+                <a href="./users" class="nav-link <?php if($routerArray[5]=='users') : ?> active <?php endif ?>">
                     <i class="nav-icon far fa-user"></i>
                     <p>
                         Users
@@ -44,7 +44,7 @@
             </li>
           
            <li class="nav-item">
-               <a href="xampp/var/www/html/php/psychologi/pysichologi/clinicHistori" class="nav-link <?php if($routerArray[5]=='clinicHistori') : ?> active <?php endif ?>">
+               <a href="/SkylAb-145/Proyects/psychologi/pysichologi/clinicHistori" class="nav-link <?php if($routerArray[5]=='clinicHistori') : ?> active <?php endif ?>">
                    <i class="nav-icon far fa-user"></i>
                    <p>
                        Clinic Histori
@@ -53,7 +53,7 @@
            </li>
 
            <li class="nav-item">
-               <a href="xampp/var/www/html/php/psychologi/pysichologi/interviews" class="nav-link <?php if($routerArray[5]=='interviews') : ?> active <?php endif ?>">
+               <a href="/SkylAb-145/Proyects/psychologi/pysichologi/interviews" class="nav-link <?php if($routerArray[5]=='interviews') : ?> active <?php endif ?>">
                    <i class="nav-icon far fa-user"></i>
                    <p>
                        Interviews
@@ -62,7 +62,7 @@
            </li>
 
            <li class="nav-item">
-               <a href="xampp/var/www/html/php/psychologi/pysichologi/psychologits" class="nav-link <?php if($routerArray[5]=='psychologits') : ?> active <?php endif ?>">
+               <a href="/SkylAb-145/Proyects/psychologi/pysichologi/psychologits" class="nav-link <?php if($routerArray[5]=='psychologits') : ?> active <?php endif ?>">
                    <i class="nav-icon far fa-user"></i>
                    <p>
                        Psychologits
@@ -71,7 +71,7 @@
            </li>
 
            <li class="nav-item">
-               <a href="xampp/var/www/html/php/psychologi/pysichologi/treatment" class="nav-link <?php if($routerArray[5]=='treatment') : ?> active <?php endif ?>">
+               <a href="/SkylAb-145/Proyects/psychologi/pysichologi/treatment" class="nav-link <?php if($routerArray[5]=='treatment') : ?> active <?php endif ?>">
                    <i class="nav-icon far fa-user"></i>
                    <p>
                        Treatment

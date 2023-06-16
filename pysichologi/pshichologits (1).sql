@@ -28,7 +28,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `pacientes` (
-  `id` int(11) NOT NULL,
+  `id` int(11) PRIMARY KEY AUTO_INCREMENT NOT NULL,
   `imagen` varchar(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_spanish2_ci NOT NULL,
   `nombre` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_spanish2_ci NOT NULL,
   `edad` int(11) NOT NULL,
@@ -86,7 +86,7 @@ INSERT INTO `pacientes` (`id`, `imagen`, `nombre`, `edad`, `promedio`, `nivelCAm
 --
 
 CREATE TABLE `psicologas` (
-  `id_psicologa` int(11) NOT NULL,
+  `id_psicologa` int(11) PRIMARY KEY AUTO_INCREMENT NOT NULL,
   `nombre` varchar(50) NOT NULL,
   `especialidad` text NOT NULL,
   `edad` int(11) NOT NULL
@@ -94,19 +94,6 @@ CREATE TABLE `psicologas` (
 
 --
 -- Índices para tablas volcadas
---
-
---
--- Indices de la tabla `pacientes`
---
-ALTER TABLE `pacientes`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indices de la tabla `psicologas`
---
-ALTER TABLE `psicologas`
-  ADD PRIMARY KEY (`id_psicologa`);
 
 --
 -- AUTO_INCREMENT de las tablas volcadas
@@ -114,9 +101,7 @@ ALTER TABLE `psicologas`
 
 --
 -- AUTO_INCREMENT de la tabla `psicologas`
---
-ALTER TABLE `psicologas`
-  MODIFY `id_psicologa` int(11) NOT NULL AUTO_INCREMENT;
+
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

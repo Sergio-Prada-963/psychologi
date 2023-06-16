@@ -1,4 +1,4 @@
-<div class="content-wrapper">
+<div>
     <div class="card-header">
       <h3 class="card-title">Añadir Psicologa</h3>
     </div>
@@ -24,7 +24,7 @@
 </div>
 
 <?php 
-$url = "http://localhost/xampp/var/www/html/php/psychologi/apirest/controles/psycologas.php?op=insert"; 
+$url = "http://localhost/SkylAb-145/Proyects/psychologi/apirest/controles/psycologas.php?op=insert"; 
 if(isset($_POST['guardar'])){
 
 $datos = [

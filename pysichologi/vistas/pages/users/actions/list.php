@@ -1,4 +1,4 @@
-<?php $url = "http://localhost/xampp/var/www/html/php/psychologi/apirest/controles/campers.php?op=GetAll"; 
+<?php $url = "http://localhost/SkylAb-145/Proyects/psychologi/apirest/controles/campers.php?op=GetAll"; 
     $curl = curl_init();
     curl_setopt($curl, CURLOPT_URL, $url);
     curl_setopt($curl, CURLOPT_RETURNTRANSFER,1);
