@@ -18,7 +18,7 @@ class Camper extends Conectar{
             $stm->execute();
             return $stm->fetchAll(PDO::FETCH_ASSOC);
 
-        } catch (Exeption $e) {
+        } catch (Exception $e) {
             return $e->getMessage();
         }
         
@@ -31,7 +31,7 @@ class Camper extends Conectar{
             $stm->bindValue(1,$id);
             $stm->execute();
             return $stm->fetchAll(PDO::FETCH_ASSOC);
-        } catch (Exeption $e) {
+        } catch (Exception $e) {
             return $e->getMessage();
         }
     }

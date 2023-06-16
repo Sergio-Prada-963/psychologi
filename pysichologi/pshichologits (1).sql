@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1deb5ubuntu1
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost:3306
--- Generation Time: Jun 15, 2023 at 03:05 PM
--- Server version: 8.0.33-0ubuntu0.22.04.2
--- PHP Version: 8.1.2-1ubuntu2.11
+-- Servidor: 127.0.0.1
+-- Tiempo de generación: 16-06-2023 a las 03:45:14
+-- Versión del servidor: 10.4.28-MariaDB
+-- Versión de PHP: 8.0.28
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,38 +18,39 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `pshichologits`
+-- Base de datos: `pshichologits`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `pacientes`
+-- Estructura de tabla para la tabla `pacientes`
 --
 
 CREATE TABLE `pacientes` (
-  `id` int NOT NULL,
-  `imagen` varchar(30) COLLATE utf8mb4_spanish2_ci NOT NULL,
-  `nombre` varchar(50) COLLATE utf8mb4_spanish2_ci NOT NULL,
-  `edad` int NOT NULL,
-  `promedio` int NOT NULL,
-  `nivelCAmpus` varchar(30) COLLATE utf8mb4_spanish2_ci NOT NULL,
-  `nivelIngles` varchar(30) COLLATE utf8mb4_spanish2_ci NOT NULL,
-  `especialidad` varchar(30) COLLATE utf8mb4_spanish2_ci NOT NULL,
-  `direccion` varchar(50) COLLATE utf8mb4_spanish2_ci NOT NULL,
-  `celular` varchar(10) COLLATE utf8mb4_spanish2_ci NOT NULL,
+  `id` int(11) NOT NULL,
+  `imagen` varchar(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_spanish2_ci NOT NULL,
+  `nombre` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_spanish2_ci NOT NULL,
+  `edad` int(11) NOT NULL,
+  `promedio` int(11) NOT NULL,
+  `nivelCAmpus` varchar(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_spanish2_ci NOT NULL,
+  `nivelIngles` varchar(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_spanish2_ci NOT NULL,
+  `especialidad` varchar(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_spanish2_ci NOT NULL,
+  `direccion` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_spanish2_ci NOT NULL,
+  `celular` varchar(10) CHARACTER SET utf8mb4 COLLATE utf8mb4_spanish2_ci NOT NULL,
   `ingles` float NOT NULL,
   `Ser` float NOT NULL,
   `Review` float NOT NULL,
   `Skills` float NOT NULL,
   `Asitencia` float NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish2_ci;
+);
 
 --
--- Dumping data for table `pacientes`
+-- Volcado de datos para la tabla `pacientes`
 --
 
 INSERT INTO `pacientes` (`id`, `imagen`, `nombre`, `edad`, `promedio`, `nivelCAmpus`, `nivelIngles`, `especialidad`, `direccion`, `celular`, `ingles`, `Ser`, `Review`, `Skills`, `Asitencia`) VALUES
+(0, '', 'nombre', 0, 0, '', '', 'especialidad', '', '', 0, 0, 0, 0, 0),
 (1, 'rinconC.jpg', 'Andres Santiago Rincón Diaz', 19, 5, 'intermedio', 'beginner', 'backEnd', 'Calle 5 # 28-35', '3154317110', 2.8, 3, 2.5, 3, 4.8),
 (2, 'camper-anonimo2.jpg', 'Angela Gomez Lizarazo', 20, 4, 'intermedio', 'middle', 'backEnd', 'Calle 5 # 28-35', '3154317110', 1, 1, 1, 1, 1),
 (3, 'camiloC.jpg', 'Camilo Andres Caballero', 22, 4, 'intermedio', 'advanced', 'frontEnd', 'Calle 5 # 28-35', '3154317110', 4.8, 3.5, 4.5, 3.2, 3.2),
@@ -81,48 +82,41 @@ INSERT INTO `pacientes` (`id`, `imagen`, `nombre`, `edad`, `promedio`, `nivelCAm
 -- --------------------------------------------------------
 
 --
--- Table structure for table `psicologas`
+-- Estructura de tabla para la tabla `psicologas`
 --
 
 CREATE TABLE `psicologas` (
-  `id_psicologa` int NOT NULL,
+  `id_psicologa` int(11) NOT NULL,
   `nombre` varchar(50) NOT NULL,
   `especialidad` text NOT NULL,
-  `edad` int NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  `edad` int(11) NOT NULL
+);
 
 --
--- Dumping data for table `psicologas`
---
-
-INSERT INTO `psicologas` (`id_psicologa`, `nombre`, `especialidad`, `edad`) VALUES
-(1, 'Angie', 'Maestria en psicologia', 20);
-
---
--- Indexes for dumped tables
+-- Índices para tablas volcadas
 --
 
 --
--- Indexes for table `pacientes`
+-- Indices de la tabla `pacientes`
 --
 ALTER TABLE `pacientes`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `psicologas`
+-- Indices de la tabla `psicologas`
 --
 ALTER TABLE `psicologas`
   ADD PRIMARY KEY (`id_psicologa`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT de las tablas volcadas
 --
 
 --
--- AUTO_INCREMENT for table `psicologas`
+-- AUTO_INCREMENT de la tabla `psicologas`
 --
 ALTER TABLE `psicologas`
-  MODIFY `id_psicologa` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_psicologa` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

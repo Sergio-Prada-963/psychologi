@@ -17,34 +17,34 @@ switch($_GET["op"]){
        echo json_encode($datos);
     break;
 
-    case "GetId":
+    // case "GetId":
 
-        $datos=$psycologas->get_psycologa_x_id($body["id_psicologa"]);
-        echo json_encode($datos);
+    //     $datos=$psycologas->get_psycologa_x_id($body["id_psicologa"]);
+    //     echo json_encode($datos);
   
-    break;
+    // break;
 
 
     case "insert":
-
+        
         $datos=$psycologas->insert_psicologa($body["id_psicologa"], $body["nombre"],$body["especialidad"],$body["edad"]);
         echo json_encode("insertado correctamente");
   
       break;
 
-    case "update":
+    // case "update":
 
-        $datos=$psycologas->update_psycologa($body["id_psicologa"], $body["nombre"],$body["especialidad"],$body["edad"]);
-        echo json_encode("Psycologa actualizado correctamente");
+    //     $datos=$psycologas->update_psycologa($body["id_psicologa"], $body["nombre"],$body["especialidad"],$body["edad"]);
+    //     echo json_encode("Psycologa actualizado correctamente");
   
-    break;
+    // break;
 
-    case "delete":
+    // case "delete":
 
-        $datos=$psycologas->delete_psycologa($body["id_psycologa"]);
-        echo json_encode("Psycologa eliminada correctamente");
+    //     $datos=$psycologas->delete_psycologa($body["id_psycologa"]);
+    //     echo json_encode("Psycologa eliminada correctamente");
   
-      break;
+    //   break;
 
 }
 
